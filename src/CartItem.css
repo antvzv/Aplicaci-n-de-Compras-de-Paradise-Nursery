@@ -1,0 +1,126 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f4f6f8;
+  min-height: calc(100vh - 80px);
+}
+
+.cart-item {
+  display: flex;
+  width: 650px;
+  max-width: 90vw;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+}
+
+.cart-item-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.cart-item-cost {
+  font-size: 1.05rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.cart-item-button {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.cart-item-button:hover {
+  background-color: #cbd5e0;
+}
+
+.cart-item-quantity-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-width: 24px;
+  text-align: center;
+}
+
+.cart-item-total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d6a4f;
+}
+
+.cart-item-delete {
+  align-self: flex-start;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.cart-item-delete:hover {
+  background-color: #d62828;
+}
+
+.empty-cart-msg {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+  margin: 40px 0;
+}
+
+.checkout-btn {
+  background-color: #1b4332;
+}
+
+.checkout-btn:hover {
+  background-color: #081c15;
+}
+
